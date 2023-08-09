@@ -34,7 +34,7 @@ conclusion_tab_panel <- tabPanel("Conclusion/Summary Takeaways",
                             h1("TO DO: Add conclusion here.")
 )
 
-ui <- navbarPage("Maternity Leave",
+ui <- navbarPage("Abortion Clinics Distance in Driving Time",
                  introduction_tab_panel,
                  graph1_tab_panel,
                  graph2_tab_panel,
