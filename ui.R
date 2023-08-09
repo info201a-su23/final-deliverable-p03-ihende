@@ -19,11 +19,16 @@ maternity_leave_by_plot <- tabPanel("Maternity Leave By Country",
 )
 
 
-secont_tab_panel <- tabPanel("Second graph",
+second_tab_panel <- tabPanel("Second graph",
+                             h1("TO DO: Add another graph here.")
+)
+
+third_tab_panel <- tabPanel("Third graph",
                              h1("TO DO: Add another graph here.")
 )
 
 ui <- navbarPage("Maternity Leave",
                  maternity_leave_by_plot,
-                 secont_tab_panel
+                 second_tab_panel,
+                 third_tab_panel
 )
