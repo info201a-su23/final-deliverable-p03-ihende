@@ -2,25 +2,34 @@ library(dplyr)
 library(plotly)
 library(ggplot2)
 
-maternity_df <- read.csv("https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/maternity-leave-2021.csv", stringsAsFactors = FALSE)
+clinics_df <- read.csv("cities.csv", stringsAsFactors = FALSE)
 
 server <- function(input, output) {
-  output$maternity_plotly <- renderPlotly({
-    selected_df <- maternity_df %>%
-      filter(Country.Name %in% input$country_select)
+  output$clinics1_plotly <- renderPlotly({
+    summarized_df <- clinics_df %>%
+      group_by(state) %>%
+      summarize(avg_12_gestation_time = mean(gestation_12_duration)) %>%
+      filter(state %in% input$state_select)
     
-    maternity_plot <- ggplot(selected_df) +
-      geom_col(aes(x = Value,
-                   y = reorder(Country.Name, +Value),
-                   fill = Country.Name,
-      ))
+    clinics1_plot <- ggplot(summarized_df) +
+      geom_col(aes(x = state,
+                   y = avg_12_gestation_time,
+                   fill = state)) +
+      labs(x = "State", y = "Average 12-week Driving Time (hours)", fill = "Key")
     
-    maternity_plotly <- ggplotly(maternity_plot)
+    clinics1_plotly <- ggplotly(clinics1_plot)
     
-    return(maternity_plotly)
-    
+    return(clinics1_plotly)
   })
+ 
+  output$clinics2_plotly <- renderPlotly({
+    # Code for second graph goes here
+    
+  })  
+  
+  output$clinics3_plotly <- renderPlotly({
+    # Code for third graph goes here
+
+  })
+   
 }
-  
-  
-  

@@ -1,24 +1,26 @@
+library(shiny)
+library(shinythemes)
 
 introduction_tab_panel <- tabPanel("Introduction",
                                     h1("TO DO: Add introduction here.")
 )
 
 
-graph1_tab_panel <- tabPanel("First graph",
-                             h1("Maternity Leave By Country"),
+graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
+                             h1("Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation"),
                              
                              sidebarLayout(
                                sidebarPanel(
-                                 h2("Options for Graph"),
-                                 selectInput(inputId = "country_select",
-                                             label = "Select Countries",
-                                             choices = maternity_df$Country.Name,
-                                             selected = "Bulgaria",
+                                 h2("State Selector"),
+                                 selectInput(inputId = "state_select",
+                                             label = "Select State(s)",
+                                             choices = clinics_df$state,
+                                             selected = "Washington",
                                              multiple = TRUE)
                                ),
                                mainPanel(
-                                 h2("Maternity Leave by Country Plot"),
-                                 plotlyOutput(outputId = "maternity_plotly")
+                                 h2("Average Distance (hours) at 12 Weeks Gestation by State Plot"),
+                                 plotlyOutput(outputId = "clinics1_plotly")
                                )
                              ))
 
@@ -34,7 +36,9 @@ conclusion_tab_panel <- tabPanel("Conclusion/Summary Takeaways",
                             h1("TO DO: Add conclusion here.")
 )
 
-ui <- navbarPage("Abortion Clinics Distance in Driving Time",
+ui <- navbarPage(
+                 theme = shinytheme("superhero"),
+                 "Driving Times to Abortion Clinics in the U.S. - How Far is Too Far?",
                  introduction_tab_panel,
                  graph1_tab_panel,
                  graph2_tab_panel,
