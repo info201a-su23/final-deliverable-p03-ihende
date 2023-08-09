@@ -8,7 +8,7 @@ introduction_tab_panel <- tabPanel("Introduction",
 
 graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
                              h1("Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation"),
-                             
+                             p("description"),
                              sidebarLayout(
                                sidebarPanel(
                                  h2("State Selector"),
