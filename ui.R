@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 
 introduction_tab_panel <- tabPanel("Introduction",
-                                    h1("TO DO: Add introduction here.")
+                                   h1("TO DO: Add introduction here.")
 )
 
 graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
@@ -35,19 +35,19 @@ graph2_tab_panel <- tabPanel("Second graph",
 )
 
 graph3_tab_panel <- tabPanel("Third graph",
-                            h1("TO DO: Add another graph here.")
+                             h1("TO DO: Add another graph here.")
 )
 
 conclusion_tab_panel <- tabPanel("Conclusion/Summary Takeaways",
-                            h1("TO DO: Add conclusion here.")
+                                 h1("TO DO: Add conclusion here.")
 )
 
 ui <- navbarPage(
-                 theme = shinytheme("superhero"),
-                 "Driving Times to Abortion Clinics in the U.S. - How Far is Too Far?",
-                 introduction_tab_panel,
-                 graph1_tab_panel,
-                 graph2_tab_panel,
-                 graph3_tab_panel,
-                 conclusion_tab_panel
+  theme = shinytheme("superhero"),
+  "Driving Times to Abortion Clinics in the U.S. - How Far is Too Far?",
+  introduction_tab_panel,
+  graph1_tab_panel,
+  graph2_tab_panel,
+  graph3_tab_panel,
+  conclusion_tab_panel
 )

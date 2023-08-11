@@ -1,8 +1,17 @@
 library(dplyr)
 library(plotly)
 library(ggplot2)
+library(tidyverse)
 
 clinics_df <- read.csv("cities.csv", stringsAsFactors = FALSE)
+
+new_clinics_df <- clinics_df %>%
+  select(state, gestation_8_duration, gestation_12_duration, gestation_16_duration, gestation_20_duration)
+
+pivot_df <- new_clinics_df %>%
+  pivot_longer(!c(state),
+                  names_to = "gestation",
+                  values_to = "duration")
 
 server <- function(input, output) {
   output$clinics1_plotly <- renderPlotly({
@@ -21,7 +30,7 @@ server <- function(input, output) {
     
     return(clinics1_plotly)
   })
- 
+  
   output$clinics2_plotly <- renderPlotly({
     # Code for second graph goes here
     
@@ -29,7 +38,8 @@ server <- function(input, output) {
   
   output$clinics3_plotly <- renderPlotly({
     # Code for third graph goes here
-
+    
   })
-   
+  
 }
+
