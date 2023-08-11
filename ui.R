@@ -5,10 +5,16 @@ introduction_tab_panel <- tabPanel("Introduction",
                                     h1("TO DO: Add introduction here.")
 )
 
-
 graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
                              h1("Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation"),
-                             p("description"),
+                             p("This chart shows the average driving time to the nearest abortion clinic
+                               at 12 weeks gestation for the selected state(s). Users can select as many
+                               or as little states as they wish to observe. This visual was designed to
+                               allow users to observe patterns and disparities across different states or 
+                               regions and give them an idea of what abortion clinic access at 12 weeks 
+                               looks like in various locations. The variability of this chart can also
+                               allow users to draw conclusions or make inferences regarding the impacts of 
+                               individual state government policies on abortion access."),
                              sidebarLayout(
                                sidebarPanel(
                                  h2("State Selector"),
