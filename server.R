@@ -42,10 +42,11 @@ server <- function(input, output) {
     selected_df <- pivot_df %>%
       filter(state == selected_state) %>%
       group_by(gestation) %>%
-      summarize(avg_duration = mean(duration))
+      summarize(avg_duration = mean(duration)) %>%
+      arrange(avg_duration)
     
     clinics2_plot <- ggplot(selected_df) +
-      geom_col(aes(x = factor(gestation),
+      geom_col(aes(x = reorder(factor(gestation), avg_duration),
                    y = avg_duration,
                    fill = factor(gestation),
                    text = paste("Average Duration: ", round(avg_duration, 2), " hours")),
@@ -54,7 +55,7 @@ server <- function(input, output) {
            y = "Driving Duration (hours)", 
            fill = "Gestation Weeks") +
       labs(title = paste("Average Driving Time at Different Gestation Stages in", selected_state)) +
-      scale_x_discrete(labels = c("12 weeks", "16 weeks", "20 weeks", "8 weeks")) +
+      scale_x_discrete(labels = c("8 weeks", "12 weeks", "16 weeks", "20 weeks")) +
       theme(legend.position = "none")
 
     clinics2_plotly <- ggplotly(clinics2_plot, tooltip = "text")
