@@ -16,8 +16,9 @@ introduction_tab_panel <- tabPanel("Introduction",
                                      the healthcare disparities that are created as a result because they can widen other
                                      socioeconomic gaps. With the provided dataset, we hope to answer the following questions:"),
                                    p("1. How does each state vary in the driving times (hours) to the nearest abortion
-                                     clinic?"),
-                                   p("2. "),
+                                     clinic at 12 weeks gestation?"),
+                                   p("2. How restrictive are individual states when providing abortion access at different
+                                     stages of pregnancy?"),
                                    p("3. "),
                                    p(""),
                                    p("This data was collected by Russell Goldenberg and provides us with information on
@@ -43,10 +44,10 @@ introduction_tab_panel <- tabPanel("Introduction",
                                        height = "300px",
                                        width = "525px",
                                        style= "position:absolute; left: 200px;")
-
+                                   
 )
 
-graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
+graph1_tab_panel <- tabPanel("Driving Distance by State (12 Weeks)",
                              h1("Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation"),
                              p("This chart shows the average driving time to the nearest abortion clinic
                                at 12 weeks gestation for the selected state(s). Users can select as many
@@ -67,21 +68,41 @@ graph1_tab_panel <- tabPanel("Average Distance by State (12 Weeks)",
                                              multiple = TRUE)
                                ),
                                mainPanel(
-                                 h2("Average Distance (hours) at 12 Weeks Gestation by State Plot"),
                                  plotlyOutput(outputId = "clinics1_plotly")
                                )
                              ))
 
-graph2_tab_panel <- tabPanel("Second graph",
-                             h1("TO DO: Add another graph here.")
-)
+graph2_tab_panel <- tabPanel("Driving Distance by Gestation Stage",
+                             h1("Average Driving Distance (hours) to Nearest Clinic at each Gestation Stage"),
+                             p("This chart shows the average driving time to the nearest abortion clinic
+                               at either 8, 12, 16, or 20 weeks gestation for the selected state. These stages
+                               of pregnancy were chosen as the first two groups fall within the first trimester 
+                               and the last two fall within the second trimester. The user can select the state
+                               they wish to observe and see the average driving time in hours to the nearest clinic
+                               at 4 different stages of gestation. This visual allows us to observe and analyze
+                               the differences in abortion care accessibility not only by state, but at different
+                               stages of pregnancy as well. For example, this can help us compare state policies,
+                               and how restrictive abortion access is up to a certain number of weeks."),
+                             sidebarLayout(
+                               sidebarPanel(
+                                 h2("State Selector"),
+                                 selectInput(inputId = "state_select2",
+                                             label = "Select State",
+                                             choices = unique(pivot_df$state),
+                                             selected = "Washington",
+                                             multiple = FALSE)
+                               ),
+                               mainPanel(
+                                 plotlyOutput(outputId = "clinics2_plotly")
+                               )
+                             ))
 
 graph3_tab_panel <- tabPanel("Third graph",
                              h1("TO DO: Add another graph here.")
 )
 
 conclusion_tab_panel <- tabPanel("Conclusion/Summary Takeaways",
-                             h1("TO DO: Add conclusion here.")
+                                 h1("TO DO: Add conclusion here.")
 )
 
 ui <- navbarPage(

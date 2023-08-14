@@ -20,8 +20,8 @@ The data we are using for this project was used in The Pudding Essay - How far i
 With the recent overturning of Roe v. Wade and increasing polarization of politics, the topic of abortion has become increasingly controversial. Individual states and/or regions undoubtedly have varying political climates which can affect state regulations and policies on abortion access. It is important to understand the healthcare disparities that are created as a result because they can widen other
 socioeconomic gaps. With the provided dataset, we hope to answer the following questions:
 
-1. How does each state vary in the driving times (hours) to the nearest abortion clinic?
-2. ...
+1. How does each state vary in the driving times (hours) to the nearest abortion clinic at 12 weeks gestation?
+2. How restrictive are individual states when providing abortion access at different stages of pregnancy?
 3. ...
 
 This data was collected by Russell Goldenberg and provides us with information on the driving time, in hours, to the nearest abortion clinic in varying locations. This data provides information on hundreds of counties across the U.S. It provides driving times, in hours, to the nearest abortion clinic that will provide abortion care at 8, 12, 16, and 20 weeks. This type of data can help us detect patterns across various locations regarding how accessible abortion is, making the dataset sufficient in answering our main questions.
