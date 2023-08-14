@@ -110,7 +110,7 @@ graph3_tab_panel <- tabPanel("Map of the average driving distance by states",
                                ),
                                mainPanel(
                                  h2("Average driving distance of each states if the closest clinic closed for each pregnancy stage"),
-                                 plotlyOutput(outputId = "clinics2_plotly")
+                                 plotlyOutput(outputId = "clinics3_plotly")
                                )
                              )
 )
