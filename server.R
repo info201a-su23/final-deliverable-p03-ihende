@@ -23,13 +23,15 @@ server <- function(input, output) {
     clinics1_plot <- ggplot(summarized_df) +
       geom_col(aes(x = state,
                    y = avg_12_gestation_time,
-                   fill = state)) +
+                   fill = state,
+                   text = paste("Average Duration: ", round(avg_12_gestation_time, 2), " hours")),
+                 show.legend = FALSE) +
       labs(title = "Average Distance (hours) at 12 Weeks Gestation by State",
            x = "State", 
            y = "Average 12-week Driving Duration (hours)", 
            fill = "Key")
   
-    clinics1_plotly <- ggplotly(clinics1_plot)
+    clinics1_plotly <- ggplotly(clinics1_plot, tooltip = "text")
     
     return(clinics1_plotly)
   })
@@ -46,7 +48,8 @@ server <- function(input, output) {
       geom_col(aes(x = factor(gestation),
                    y = avg_duration,
                    fill = factor(gestation),
-                   text = paste("<br>Avg. Duration:", round(avg_duration, 2), "hours"))) +
+                   text = paste("Average Duration: ", round(avg_duration, 2), " hours")),
+               show.legend = FALSE) +
       labs(x = "Gestation Stage (Weeks)", 
            y = "Driving Duration (hours)", 
            fill = "Gestation Weeks") +
@@ -54,7 +57,7 @@ server <- function(input, output) {
       scale_x_discrete(labels = c("12 weeks", "16 weeks", "20 weeks", "8 weeks")) +
       theme(legend.position = "none")
 
-    clinics2_plotly <- ggplotly(clinics2_plot)
+    clinics2_plotly <- ggplotly(clinics2_plot, tooltip = "text")
    
     return(clinics2_plotly)
     
