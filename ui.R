@@ -98,7 +98,21 @@ graph2_tab_panel <- tabPanel("Driving Distance by Gestation Stage",
                              ))
 
 graph3_tab_panel <- tabPanel("Third graph",
-                             h1("TO DO: Add another graph here.")
+                             p ("This map depict the average driving by hours for each state if the closest clinic happens to closed.
+                                  Additionally, this map allows for the choose of different pregnancy stage. This feature helps shows the additional depths of the problem 
+                                  as well as highlighting the problem of number of clinic in the United States."),
+                             sidebarLayout(
+                               sidebarPanel(
+                                 selectInput("preg_stage_select", label = h3("Select pregnancy stage"), 
+                                             choices = list("8 Weeks" = "avg_8_closed", "12 Weeks" = "avg_12_closed", 
+                                                            "16 Weeks" = "avg_16_closed", "20 Weeks" = "avg_20_closed"), 
+                                             selected = "avg_8_closed"),
+                               ),
+                               mainPanel(
+                                 h2("Average driving distance of each states if the closest clinic closed for each pregnancy stage"),
+                                 plotlyOutput(outputId = "clinics2_plotly")
+                               )
+                             )
 )
 
 conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
