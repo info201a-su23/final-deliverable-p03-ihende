@@ -97,7 +97,7 @@ graph2_tab_panel <- tabPanel("Driving Distance by Gestation Stage",
                                )
                              ))
 
-graph3_tab_panel <- tabPanel("Third graph",
+graph3_tab_panel <- tabPanel("Map of the average driving distance by states",
                              p ("This map depict the average driving by hours for each state if the closest clinic happens to closed.
                                   Additionally, this map allows for the choose of different pregnancy stage. This feature helps shows the additional depths of the problem 
                                   as well as highlighting the problem of number of clinic in the United States."),
