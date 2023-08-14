@@ -102,16 +102,86 @@ graph3_tab_panel <- tabPanel("Third graph",
 )
 
 conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
-                                 h1("Conclusion & Summary Takeaways"),
-                                 p("Takeaway 1"),
-                                 p(""),
-                                 p("Takeaway 2"),
-                                 p(""),
-                                 p("Takeaway 3"),
-                                 p(""),
-                                 p("Insights/what we learned"),
-                                 p(""),
-                                 p("Implications of this project topic"),
+                             h1("Conclusion & Summary Takeaways"),
+                              p("Takeaway 1"),
+                              p("The graph titled Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation offers
+                                a comprehensive perspective that reveals nuanced insights into abortion clinic accessibility during
+                                a critical gestation stage. Through its interactive feature allowing users to select multiple states
+                                and explore variations in driving times, this visualization provides a rich platform for discerning
+                                the potential impacts of state policies and regional distinctions on abortion access. This chart goes
+                                beyond a mere representation of data; it becomes a dynamic tool for drawing meaningful conclusions and
+                                fostering a deeper understanding of the intricate factors influencing reproductive healthcare access.
+                                 
+                                The visualization's effectiveness lies in its ability to visually convey the stark differences in average
+                                driving times to the nearest abortion clinic at 12 weeks gestation across a diverse array of states. The
+                                spectrum of driving times, spanning from relatively brief durations to significantly extended periods,
+                                serves as a vivid indicator of the undeniable disparities in accessibility present across varying regions.
+                                This observation emphasizes the necessity of not only analyzing the legal frameworks that underpin abortion
+                                policies but also considering the real-world implications that these policies manifest in terms of actual clinic access times.
+                                   
+                                In essence, this takeaway encapsulates the core essence of the project—using data visualization to bridge
+                                the gap between policy decisions and the on-the-ground experiences of individuals seeking reproductive healthcare.
+                                By providing a platform to explore regional variations and their potential causes, the graph acts as a conduit for
+                                understanding the multifaceted landscape of abortion clinic accessibility, where geographical nuances and state
+                                policies converge to shape the realities of reproductive healthcare access."),
+                              p("Takeaway 2"),
+                              p("In summary, delving into the analysis of the Distance by Gestation Stage graph reveals an 
+                                intricate tapestry of dynamics within the realm of abortion care accessibility—woven from the threads
+                                of geographic disparities and the crucial variable of gestation stage. By delivering a focused examination of driving
+                                distances to clinics through a state-specific lens, the graph emerges as a pivotal instrument for conducting a nuanced
+                                evaluation of the far-reaching consequences of policy decisions on reproductive healthcare access. This multifaceted
+                                insight taps into the very heart of the project's objectives, which center on unraveling the complexities of abortion
+                                access and fostering a deeper understanding of the forces that shape it.
+                                 
+                                The graph's power lies in its capacity to provide a comprehensive visual panorama, allowing us to juxtapose geographical
+                                variations and reproductive stages on a single canvas. This layered approach equips us with the means to scrutinize
+                                not only how abortion care accessibility varies across states but also how it evolves within different gestation windows.
+                                This nuanced exploration underscores the project's mission—to shed light on the interplay between policy choices and tangible
+                                healthcare realities. The symbiotic relationship between policy decisions and accessibility becomes apparent, and this insight 
+                                resonates with the project's overarching goal: to fuel informed and comprehensive policy dialogues that pave the way for equal
+                                and prompt access to abortion services for all individuals.
+                                   
+                                Ultimately, the analysis echoes the clarion call for evidence-based, impactful interventions. By revealing the 
+                                intricate dance of geographic and policy-related factors, the graph emboldens our resolve to address the inequalities
+                                that shape reproductive healthcare access. It becomes clear that the journey toward a more equitable future in reproductive
+                                healthcare necessitates informed discussions, collaborative efforts, and a steadfast commitment to bridging the gap between
+                                policy intent and the lived experiences of those seeking abortion care."),
+                              p("Takeaway 3"),
+                              p(""),
+                              p("Insights/what we learned"),
+                              p("The most significant insight gleaned from our analysis is the stark disparity in
+                                abortion clinic accessibility, with South Dakota standing out as a poignant example.
+                                Our findings reveal a notable and concerning trend—South Dakota's average driving time
+                                to the nearest clinic at 12 weeks gestation is over three times higher than the national
+                                average for all states in the US. This revelation underscores the profound impact that state-level
+                                policies and geographical context can have on reproductive healthcare access. 
+                                 
+                                This stark contrast in driving times serves as a powerful reminder of the intricate relationship
+                                between policy decisions and practical healthcare realities. South Dakota's notably longer average
+                                driving time points towards potential barriers that individuals in the state may face when seeking
+                                timely abortion care. This disparity not only raises questions about the state's abortion regulations
+                                and availability of services but also highlights the potential implications for individuals with limited
+                                resources, those living in rural areas, and those who might be disproportionately affected by these access challenges.
+                                 
+                                The South Dakota example resonates deeply with the project's objectives, as it encapsulates the essence
+                                of the study—examining the impact of political and geographical factors on reproductive healthcare accessibility.
+                                This specific insight prompts further exploration into the reasons behind this significant disparity, delving into
+                                the potential intersection of state regulations, clinic distribution, transportation infrastructure, and socioeconomic factors.
+                                   
+                                Ultimately, the revelation about South Dakota emphasizes the ongoing relevance of understanding these disparities,
+                                especially in the context of an evolving political landscape and recent developments in reproductive rights. As we
+                                continue to grapple with shifting policy landscapes and the potential impact on healthcare access, this insight
+                                underscores the urgency of informed discussions and interventions to ensure equitable reproductive healthcare access
+                                for all individuals, regardless of their geographic location."),
+                              p("Implications of this project topic"),
+                              p("The insight that South Dakota exhibits an average driving time to the nearest clinic at 12 weeks gestation over three
+                                times higher than the national average holds significant implications. This revelation sheds light on healthcare disparities,
+                                as individuals in regions with limited clinic access face heightened challenges in seeking abortion care. This underscores broader
+                                issues of healthcare equity and underscores the need for comprehensive policies that account for socioeconomic factors and accessibility
+                                challenges. Additionally, the South Dakota case underscores the direct impact of state policies on healthcare access, emphasizing the need
+                                for advocacy, awareness, and evidence-based policy reform. This insight serves as a compelling example of the real-world consequences of 
+                                restrictive policies on reproductive rights and prompts discussions on addressing disparities and ensuring equitable access to critical
+                                healthcare services.")
                                  
 )
 
@@ -124,3 +194,4 @@ ui <- navbarPage(
   graph3_tab_panel,
   conclusion_tab_panel
 )
+
