@@ -15,6 +15,18 @@ pivot_df <- new_clinics_df %>%
                names_to = "gestation",
                values_to = "duration")
 
+theme1 <- theme_bw() +
+  theme (
+    axis.line = element_blank(),
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    axis.title = element_blank(),
+    plot.background = element_blank(),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+  )
+
 server <- function(input, output) {
   output$clinics1_plotly <- renderPlotly({
     summarized_df <- clinics_df %>%
@@ -85,7 +97,8 @@ server <- function(input, output) {
       geom_polygon(aes(long, lat, group=group, fill = get(input$preg_stage_select))) +
       scale_fill_continuous(low = "yellow", high = 'red') +
       coord_map() +
-      labs(fill = "Hours")
+      labs(fill = "Hours") +
+      theme1
     
     clinics3_plotly <- clinics3_plot
     
