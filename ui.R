@@ -101,8 +101,18 @@ graph3_tab_panel <- tabPanel("Third graph",
                              h1("TO DO: Add another graph here.")
 )
 
-conclusion_tab_panel <- tabPanel("Conclusion/Summary Takeaways",
-                                 h1("TO DO: Add conclusion here.")
+conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
+                                 h1("Conclusion & Summary Takeaways"),
+                                 p("Takeaway 1"),
+                                 p(""),
+                                 p("Takeaway 2"),
+                                 p(""),
+                                 p("Takeaway 3"),
+                                 p(""),
+                                 p("Insights/what we learned"),
+                                 p(""),
+                                 p("Implications of this project topic"),
+                                 
 )
 
 ui <- navbarPage(
