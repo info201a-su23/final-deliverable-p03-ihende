@@ -1,7 +1,7 @@
-# Title of Your Final Project Here 
-## INFO 201 "Foundational Skills for Data Science" — Winter 2023
+# Driving Times to Abortion Clinics in the U.S. - How Far is Too Far?
+## INFO 201 "Foundational Skills for Data Science" — Summer 2023
 
-Authors: Your names here
+Authors: Isabelle Henderson, Laila Gmerek, Joy Aoanan, & Chelsey Alcala
 
 **Link: Link to your Shiny App here**
 
