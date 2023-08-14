@@ -43,7 +43,7 @@ introduction_tab_panel <- tabPanel("Introduction",
                                        src = "https://media.glamour.com/photos/6274421e81bb7b6a215226a4/master/pass/0505-signs.png",
                                        height = "300px",
                                        width = "525px",
-                                       style= "position:absolute; left: 200px;")
+                                       style = "display: block; margin: 0 auto;")
                                    
 )
 
