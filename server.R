@@ -65,7 +65,29 @@ server <- function(input, output) {
   })  
   
   output$clinics3_plotly <- renderPlotly({
+    states <- map_data("state")
     
+    clinics_df <- read.csv("cities.csv") %>% 
+      group_by(state) %>%
+      mutate(state = tolower(state)) %>%
+      summarize(avg_8_closed = mean(gestation_8_duration_closed),
+                avg_12_closed = mean(gestation_12_duration_closed),
+                avg_16_closed = mean(gestation_16_duration_closed),
+                avg_20_closed = mean(gestation_20_duration_closed)
+                ) 
+    colnames(clinics_df)[1] <- "region"
+    
+    state_clinics <- left_join (states, clinics_df)
+    
+    clinics3_plot <- ggplot(state_clinics) +
+      geom_polygon(aes(long, lat, group=group, fill = get(input$preg_stage_select))) +
+      scale_fill_continuous(low = "yellow", high = 'red') +
+      coord_map() +
+      labs(fill = "Hours")
+    
+    clinics3_plotly <- clinics3_plot
+    
+    return(clinics3_plotly)
   })
   
 }
