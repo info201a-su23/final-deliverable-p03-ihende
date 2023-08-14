@@ -2,7 +2,7 @@ library(shiny)
 library(shinythemes)
 
 introduction_tab_panel <- tabPanel("Introduction",
-                                   h1("Introductions"),
+                                   h1("Introduction"),
                                    p("The data we are using for this project was used in The Pudding Essay -
                                      How far is too far? An analysis of driving times to abortion clinics in the US. in
                                      September 2017. The data set can be accessed here:"),
@@ -38,7 +38,11 @@ introduction_tab_panel <- tabPanel("Introduction",
                                      information for two clinics. Additionally, for city-specific data, only cities with >50,000 
                                      population (via 2015 data) were included. When considering this data, these ethical questions
                                      and limitations must be considered by us and users of our visuals."),
-                                   img(src = "images/abortion.png")
+                                   img("",
+                                       src = "https://media.glamour.com/photos/6274421e81bb7b6a215226a4/master/pass/0505-signs.png",
+                                       height = "300px",
+                                       width = "525px",
+                                       style= "position:absolute; left: 200px;")
 
 )
 
