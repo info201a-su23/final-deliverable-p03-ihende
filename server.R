@@ -2,6 +2,8 @@ library(dplyr)
 library(plotly)
 library(ggplot2)
 library(tidyverse)
+library(maps)
+library(mapproj)
 
 clinics_df <- read.csv("cities.csv", stringsAsFactors = FALSE)
 
