@@ -118,7 +118,28 @@ graph3_tab_panel <- tabPanel("Map of the average driving distance by states",
 conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                  h1("Conclusion & Summary Takeaways"),
                                  p("Takeaway 1"),
-                                 p(""),
+                                 p("In summary, delving into the analysis of the Distance by Gestation Stage graph reveals an intricate
+                                 tapestry of dynamics within the realm of abortion care accessibility—woven from the threads of geographic
+                                 disparities and the crucial variable of gestation stage. By delivering a focused examination of driving
+                                 distances to clinics through a state-specific lens, the graph emerges as a pivotal instrument for conducting
+                                 a nuanced evaluation of the far-reaching consequences of policy decisions on reproductive healthcare access.
+                                 This multifaceted insight taps into the very heart of the project's objectives, which center on unraveling
+                                 the complexities of abortion access and fostering a deeper understanding of the forces that shape it.
+                                 
+                                 The graph's power lies in its capacity to provide a comprehensive visual panorama, allowing us to juxtapose
+                                 geographical variations and reproductive stages on a single canvas. This layered approach equips us with the
+                                 means to scrutinize not only how abortion care accessibility varies across states but also how it evolves
+                                 within different gestation windows. This nuanced exploration underscores the project's mission—to shed light
+                                 on the interplay between policy choices and tangible healthcare realities. The symbiotic relationship between
+                                 policy decisions and accessibility becomes apparent, and this insight resonates with the project's overarching
+                                 goal: to fuel informed and comprehensive policy dialogues that pave the way for equal and prompt access to abortion
+                                 services for all individuals.
+                                  
+                                  Ultimately, the analysis echoes the clarion call for evidence-based, impactful interventions. By revealing 
+                                   the intricate dance of geographic and policy-related factors, the graph emboldens our resolve to address
+                                   the inequalities that shape reproductive healthcare access. It becomes clear that the journey toward a more
+                                   equitable future in reproductive healthcare necessitates informed discussions, collaborative efforts, and a s
+                                   teadfast commitment to bridging the gap between policy intent and the lived experiences of those seeking abortion care."),
                                  p("Takeaway 2"),
                                  p("The graph titled Average Driving Time (hours) to Nearest Clinic at 12 Weeks Gestation
                                  offers a comprehensive perspective that reveals nuanced insights into abortion clinic accessibility
@@ -144,28 +165,7 @@ conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                    clinic accessibility, where geographical nuances and state policies converge to shape the realities
                                    of reproductive healthcare access."),
                                  p("Takeaway 3"),
-                                 p("In summary, delving into the analysis of the Distance by Gestation Stage graph reveals an intricate
-                                 tapestry of dynamics within the realm of abortion care accessibility—woven from the threads of geographic
-                                 disparities and the crucial variable of gestation stage. By delivering a focused examination of driving
-                                 distances to clinics through a state-specific lens, the graph emerges as a pivotal instrument for conducting
-                                 a nuanced evaluation of the far-reaching consequences of policy decisions on reproductive healthcare access.
-                                 This multifaceted insight taps into the very heart of the project's objectives, which center on unraveling
-                                 the complexities of abortion access and fostering a deeper understanding of the forces that shape it.
-                                 
-                                 The graph's power lies in its capacity to provide a comprehensive visual panorama, allowing us to juxtapose
-                                 geographical variations and reproductive stages on a single canvas. This layered approach equips us with the
-                                 means to scrutinize not only how abortion care accessibility varies across states but also how it evolves
-                                 within different gestation windows. This nuanced exploration underscores the project's mission—to shed light
-                                 on the interplay between policy choices and tangible healthcare realities. The symbiotic relationship between
-                                 policy decisions and accessibility becomes apparent, and this insight resonates with the project's overarching
-                                 goal: to fuel informed and comprehensive policy dialogues that pave the way for equal and prompt access to abortion
-                                 services for all individuals.
-                                  
-                                  Ultimately, the analysis echoes the clarion call for evidence-based, impactful interventions. By revealing 
-                                   the intricate dance of geographic and policy-related factors, the graph emboldens our resolve to address
-                                   the inequalities that shape reproductive healthcare access. It becomes clear that the journey toward a more
-                                   equitable future in reproductive healthcare necessitates informed discussions, collaborative efforts, and a s
-                                   teadfast commitment to bridging the gap between policy intent and the lived experiences of those seeking abortion care."),
+                                 p(""),
                                  p("Insights/what we learned"),
                                  p("The revelation that South Dakota faces an average driving time to the nearest clinic at 12 weeks gestation,
                                    over three times higher than the national average, holds profound implications. This discovery vividly exposes
