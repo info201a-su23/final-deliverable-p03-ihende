@@ -4,6 +4,8 @@ library(ggplot2)
 library(tidyverse)
 library(maps)
 library(mapproj)
+library(shiny)
+library(rsconnect)
 
 clinics_df <- read.csv("cities.csv", stringsAsFactors = FALSE)
 

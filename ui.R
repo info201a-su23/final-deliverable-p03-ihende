@@ -1,5 +1,6 @@
 library(shiny)
 library(shinythemes)
+library(rsconnect)
 
 introduction_tab_panel <- tabPanel("Introduction",
                                    h1("Introduction"),
@@ -72,7 +73,7 @@ graph1_tab_panel <- tabPanel("Driving Distance by State (12 Weeks)",
                                              multiple = TRUE)
                                ),
                                mainPanel(
-                                 plotlyOutput(outputId = "clinics1_plotly")
+                                 plotly::plotlyOutput(outputId = "clinics1_plotly")
                                )
                              ))
 
@@ -97,7 +98,7 @@ graph2_tab_panel <- tabPanel("Driving Distance by Gestation Stage",
                                              multiple = FALSE)
                                ),
                                mainPanel(
-                                 plotlyOutput(outputId = "clinics2_plotly")
+                                 plotly::plotlyOutput(outputId = "clinics2_plotly")
                                )
                              ))
 
@@ -117,7 +118,7 @@ graph3_tab_panel <- tabPanel("Map of Average Driving Distance by Gestation",
                                              selected = "avg_8_closed"),
                                ),
                                mainPanel(
-                                 plotlyOutput(outputId = "clinics3_plotly")
+                                 plotly::plotlyOutput(outputId = "clinics3_plotly")
                                )
                              )
 )

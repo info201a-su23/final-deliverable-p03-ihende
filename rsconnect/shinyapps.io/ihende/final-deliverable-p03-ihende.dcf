@@ -1,0 +1,12 @@
+name: final-deliverable-p03-ihende
+title: final-deliverable-p03-ihende
+username: ihende
+account: ihende
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9606873
+bundleId: 7568263
+url: https://ihende.shinyapps.io/final-deliverable-p03-ihende/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
