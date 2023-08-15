@@ -93,14 +93,19 @@ server <- function(input, output) {
     
     state_clinics <- left_join (states, clinics_df)
     
+    state_clinics$text <- paste("State: ", str_to_title(state_clinics$region),
+                                "<br>Avg. Driving Distance (hours): ",
+                                state_clinics[[input$preg_stage_select]])
+    
     clinics3_plot <- ggplot(state_clinics) +
-      geom_polygon(aes(long, lat, group=group, fill = get(input$preg_stage_select))) +
+      geom_polygon(aes(long, lat, group=group, fill = get(input$preg_stage_select), text = text)) +
       scale_fill_continuous(low = "yellow", high = 'red') +
       coord_map() +
-      labs(fill = "Hours") +
+      labs(fill = "Hours",
+           title = "Avg. Driving Distance (hours) if the Nearest Clinic Closed by Gestation Stage") +
       theme1
     
-    clinics3_plotly <- clinics3_plot
+    clinics3_plotly <- ggplotly(clinics3_plot, tooltip = "text")
     
     return(clinics3_plotly)
   })
