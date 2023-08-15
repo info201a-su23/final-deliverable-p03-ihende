@@ -1,6 +1,7 @@
 library(shiny)
 library(shinythemes)
 library(rsconnect)
+library(plotly)
 
 introduction_tab_panel <- tabPanel("Introduction",
                                    h1("Introduction"),
