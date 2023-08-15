@@ -103,8 +103,8 @@ graph3_tab_panel <- tabPanel("Map of Average Driving Distance by Gestation",
                                  the closest clinic happens to closed. Additionally, this map allows 
                                  the user select different pregnancy stages (8, 12, 16, and 20 weeks). This 
                                 feature helps shows the additional geographical disparities of this topic as 
-                                well as highlighting the problem of having enough available clinics in 
-                                certain locations in the United States."),
+                                well as highlighting the problem of having enough available alternate clinics 
+                                and abortion resources in certain locations in the United States."),
                              sidebarLayout(
                                sidebarPanel(
                                  selectInput("preg_stage_select", label = h3("Select Pregnancy Stage"), 
@@ -143,6 +143,8 @@ conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                    This nuanced exploration between state, gestation stage, and driving time can help us critically analyze not only where abortion
                                    care is accessible, but the varying degrees in which it is made available. We can use these observations to draw conclusions
                                    about disparities in where and how abortion care is regulated."),
+                                 p(""),
+                                 p("3. Takeaway 3 (map)")
                                  h3("Insights/What we learned"),
                                  p("The most important insight we gathered from this report comes from the disparities and inequalities that come as a result
                                    of differing state political climates and abortion access policies. We have explore how individual states and regions may
