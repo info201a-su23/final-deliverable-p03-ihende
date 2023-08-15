@@ -144,7 +144,7 @@ conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                    care is accessible, but the varying degrees in which it is made available. We can use these observations to draw conclusions
                                    about disparities in where and how abortion care is regulated."),
                                  p(""),
-                                 p("3. Takeaway 3 (map)")
+                                 p("3. Takeaway 3 (map)"),
                                  h3("Insights/What we learned"),
                                  p("The most important insight we gathered from this report comes from the disparities and inequalities that come as a result
                                    of differing state political climates and abortion access policies. We have explore how individual states and regions may
