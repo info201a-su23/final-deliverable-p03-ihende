@@ -148,7 +148,12 @@ conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                    care is accessible, but the varying degrees in which it is made available. We can use these observations to draw conclusions
                                    about disparities in where and how abortion care is regulated."),
                                  p(""),
-                                 p("3. Takeaway 3 (map)"),
+                                 p("3. Another aspect of abortion accessibility to consider is the fact that clinics sometimes close
+                                   or shut down. In this case, the dataset accounted for that and provided data for each location and 
+                                   gestation stage in a situation where the nearest clinic is closed. We made a map to represent this data and show
+                                   the average driving distance by state at each gestation stage. We found that the states with the longest driving times
+                                   tend to be in the Midwest and are in more rural settings. Additionally, we can observe that driving times increase
+                                   as gestation progresses. This can be corroborated by the previous two bar charts."),
                                  h3("Insights/What we learned"),
                                  p("The most important insight we gathered from this report comes from the disparities and inequalities that come as a result
                                    of differing state political climates and abortion access policies. We have explored how individual states and regions may

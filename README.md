@@ -22,7 +22,7 @@ socioeconomic gaps. With the provided dataset, we hope to answer the following q
 
 1. How does each state vary in the driving times (hours) to the nearest abortion clinic at 12 weeks gestation?
 2. How restrictive are individual states when providing abortion access at different stages of pregnancy?
-3. ...
+3.  What geographical patterns can be detected across the United States regarding average driving distances to alternate abortion clinics (if the nearest one is closed)?
 
 This data was collected by Russell Goldenberg and provides us with information on the driving time, in hours, to the nearest abortion clinic in varying locations. This data provides information on hundreds of counties across the U.S. It provides driving times, in hours, to the nearest abortion clinic that will provide abortion care at 8, 12, 16, and 20 weeks. This type of data can help us detect patterns across various locations regarding how accessible abortion is, making the dataset sufficient in answering our main questions.
 
