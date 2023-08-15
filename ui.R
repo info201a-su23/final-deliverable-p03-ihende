@@ -24,22 +24,25 @@ introduction_tab_panel <- tabPanel("Introduction",
                                    p(""),
                                    p("This data was collected by Russell Goldenberg and provides us with information on
                                      the driving time, in hours, to the nearest abortion clinic in varying locations. This
-                                     data provides information on hundreds of counties across the U.S. It provides driving
+                                     data provides information on hundreds of cities across the U.S. It provides driving
                                      times, in hours, to the nearest abortion clinic that will provide abortion care at
-                                     8, 12, 16, and 20 weeks. This type of data can help us detect patterns across various
-                                     locations regarding how accessible abortion is, making the dataset sufficient in
-                                     answering our main questions."),
+                                     8, 12, 16, and 20 weeks. It also includes this same information on the availability of 
+                                     alternate clinics if the nearest clinic happens to close. This type of data can help us 
+                                     detect patterns across various locations regarding how accessible abortion is, making 
+                                     the dataset sufficient in answering our main questions."),
                                    p(""),
                                    p("However, there are ethical questions and limitations that we need to consider when
                                      using this data to answer such critical questions. For example, we must consider who
-                                     collected this data. Everyone has implicit biases, and the individual identity of the
+                                     collected this data. Everyone has implicit biases, and the individual identities of the
                                      data collectors can affect the methodology of collection and what data is/isn't included.
                                      Additionally, we must consider missing or inaccurate values. With an expansive dataset like
                                      this one, there are bound to be missing, inaccurate, or distorted values. As a matter of
                                      fact, the author of the dataset mentions that they were unable to get detailed timing
                                      information for two clinics. Additionally, for city-specific data, only cities with >50,000 
-                                     population (via 2015 data) were included. The dataset also does not include information on Vermont or West Virginia 
-                                     When considering this data, these ethical questions and limitations must be considered by us and users of our visuals."),
+                                     population (via 2015 data) were included. The dataset also does not include any data on Vermont or
+                                     West virginia. This means that this dataset is not a fully reflective depiction of abortion
+                                     access in the United States. When considering this data, these ethical questions and limitations
+                                     must be considered by us and users of our visuals."),
                                    img("",
                                        src = "https://media.glamour.com/photos/6274421e81bb7b6a215226a4/master/pass/0505-signs.png",
                                        height = "300px",
@@ -99,12 +102,13 @@ graph2_tab_panel <- tabPanel("Driving Distance by Gestation Stage",
                              ))
 
 graph3_tab_panel <- tabPanel("Map of Average Driving Distance by Gestation",
-                             p ("This map depicts the average driving distance (in hours) for each state if 
+                             h1("Map of Average Driving Distance (hours) to Alternate Clinics by Gestation Stage"),
+                             p("This map depicts the average driving distance (in hours) for each state if 
                                  the closest clinic happens to closed. Additionally, this map allows 
                                  the user select different pregnancy stages (8, 12, 16, and 20 weeks). This 
-                                feature helps shows the additional geographical disparities of this topic as 
-                                well as highlighting the problem of having enough available alternate clinics 
-                                and abortion resources in certain locations in the United States."),
+                                feature helps show the additional geographic disparities of abortion access as 
+                                well as highlighting the issue of certain locations in the United States not having 
+                                easily accessible alternate clinics and abortion resources."),
                              sidebarLayout(
                                sidebarPanel(
                                  selectInput("preg_stage_select", label = h3("Select Pregnancy Stage"), 
@@ -147,7 +151,7 @@ conclusion_tab_panel <- tabPanel("Conclusion & Summary Takeaways",
                                  p("3. Takeaway 3 (map)"),
                                  h3("Insights/What we learned"),
                                  p("The most important insight we gathered from this report comes from the disparities and inequalities that come as a result
-                                   of differing state political climates and abortion access policies. We have explore how individual states and regions may
+                                   of differing state political climates and abortion access policies. We have explored how individual states and regions may
                                    have more/less access to critical reproductive healthcare. Healthcare inequalities can have devastating socioeconomic
                                    impacts that widen existing disparities in the United States. Overall, this project was an opportunity for us to explore and
                                    understand how impactful individual state policies and regulations on healthcare can be on accessibility and consider how 
